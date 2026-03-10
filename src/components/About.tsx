@@ -49,11 +49,12 @@ export default function About() {
               <div className="relative w-72 h-72 sm:w-80 sm:h-80">
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary via-accent to-secondary p-[2px] shadow-glow-lg">
                   <div className="w-full h-full rounded-2xl bg-card-bg overflow-hidden flex items-center justify-center">
-                    <div className="w-full h-full bg-gradient-to-br from-[#1a0630] to-[#0b0b0b] flex flex-col items-center justify-center gap-3">
-                      <div className="w-20 h-20 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-4xl font-bold text-white shadow-glow">
-                        W
-                      </div>
-                      <span className="text-subtext text-sm">Profile Photo</span>
+                    <div className="w-full h-full bg-[#0b0b0b] overflow-hidden">
+                      <img
+                        src="/images/profile.jpeg"
+                        alt="Muhamad Wildan Mubarok"
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                   </div>
                 </div>
