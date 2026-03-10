@@ -57,11 +57,10 @@ export default function Navbar() {
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
           ? "bg-[#0b0b0bdd] backdrop-blur-xl border-b border-white/[0.05] shadow-[0_4px_30px_rgba(0,0,0,0.5)]"
           : "bg-transparent"
-      }`}
+        }`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16">
@@ -75,7 +74,7 @@ export default function Navbar() {
               <span className="text-white font-bold text-sm">W</span>
             </div>
             <span className="gradient-text-purple font-bold text-lg tracking-tight">
-              ykidnwg<span className="text-white">.dev</span>
+              ykidnwg<span className="text-white">.me</span>
             </span>
           </motion.button>
 
@@ -86,9 +85,8 @@ export default function Navbar() {
                 <button
                   key={link.href}
                   onClick={() => handleNavClick(link.href)}
-                  className={`nav-link text-sm font-medium transition-colors duration-200 ${
-                    isActive ? "text-white active" : "text-subtext hover:text-white"
-                  }`}
+                  className={`nav-link text-sm font-medium transition-colors duration-200 ${isActive ? "text-white active" : "text-subtext hover:text-white"
+                    }`}
                 >
                   {link.label}
                 </button>
@@ -132,11 +130,10 @@ export default function Navbar() {
                     <button
                       key={link.href}
                       onClick={() => handleNavClick(link.href)}
-                      className={`text-left px-3 py-2.5 rounded-lg text-sm font-medium transition-all duration-200 ${
-                        isActive
+                      className={`text-left px-3 py-2.5 rounded-lg text-sm font-medium transition-all duration-200 ${isActive
                           ? "bg-primary/10 text-white border border-primary/20"
                           : "text-subtext hover:text-white hover:bg-white/[0.04]"
-                      }`}
+                        }`}
                     >
                       {link.label}
                     </button>

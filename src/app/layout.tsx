@@ -15,9 +15,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "ykidnwg | Tukang Pecut Ey Ay",
+  title: "ykidnwg",
   description:
-    "Muhamad Wildan Mubarok - Tukang Pecut Ey Ay dari Sukabumi. Teuing Tenyaho kur tes.",
+    "Muhamad Wildan Mubarok - Portfolio dari Sukabumi.",
   keywords: [
     "ykidnwg",
     "Muhamad Wildan Mubarok",
@@ -26,19 +26,23 @@ export const metadata: Metadata = {
     "Sukabumi",
   ],
   authors: [{ name: "Muhamad Wildan Mubarok" }],
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+  },
   openGraph: {
-    title: "ykidnwg | Tukang Pecut Ey Ay",
+    title: "ykidnwg",
     description:
-      "Muhamad Wildan Mubarok - Tukang Pecut Ey Ay dari Sukabumi.",
+      "Muhamad Wildan Mubarok - Portfolio dari Sukabumi.",
     type: "website",
     locale: "id_ID",
     siteName: "ykidnwg Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ykidnwg | Tukang Pecut Ey Ay",
+    title: "ykidnwg",
     description:
-      "Muhamad Wildan Mubarok - Tukang Pecut Ey Ay dari Sukabumi.",
+      "Muhamad Wildan Mubarok - Portfolio dari Sukabumi.",
   },
 };
 

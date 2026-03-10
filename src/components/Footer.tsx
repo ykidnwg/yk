@@ -46,7 +46,7 @@ export default function Footer() {
                 <span className="text-white font-bold">W</span>
               </div>
               <span className="gradient-text-purple font-bold text-xl tracking-tight">
-                ykidnwg<span className="text-white">.dev</span>
+                ykidnwg<span className="text-white">.me</span>
               </span>
             </div>
             <p className="text-subtext text-sm max-w-xs">
