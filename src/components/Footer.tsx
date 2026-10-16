@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, Heart, ArrowUp } from "lucide-react";
+import { Github, Linkedin, Mail, Heart } from "lucide-react";
 import { fadeUp, staggerContainer } from "@/animations/animations";
 
 const socialLinks = [
@@ -19,10 +19,6 @@ const navLinks = [
 ];
 
 export default function Footer() {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   const handleNavClick = (href: string) => {
     const id = href.replace("#", "");
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
@@ -108,18 +104,6 @@ export default function Footer() {
         </motion.div>
       </div>
 
-      <motion.button
-        onClick={scrollToTop}
-        whileHover={{ scale: 1.1, y: -2 }}
-        whileTap={{ scale: 0.9 }}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1 }}
-        className="fixed bottom-6 right-6 w-11 h-11 rounded-xl bg-primary/20 border border-primary/30 backdrop-blur-sm text-primary hover:bg-primary/30 hover:border-primary/60 hover:shadow-glow flex items-center justify-center transition-all duration-300 z-40"
-        aria-label="Scroll to top"
-      >
-        <ArrowUp size={18} />
-      </motion.button>
     </footer>
   );
 }
