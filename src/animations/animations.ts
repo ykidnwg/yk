@@ -1,7 +1,7 @@
 import type { Variants } from "framer-motion";
 
 // Shared motion language: short travel distances, soft easing, no dramatic zooms.
-const easeOut = [0.22, 1, 0.36, 1] as const;
+const easeOut: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
 export const fadeUp: Variants = {
   hidden: { opacity: 0, y: 24 },
