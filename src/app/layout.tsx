@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     shortcut: "/favicon.svg",
   },
   openGraph: {
-    title: "ykidnwg — Pengembang Kreatif",
+    title: "ykidnwg — Creative Developer",
     description:
       "Frontend, AI, and useful digital tools — a portfolio by Muhamad Wildan Mubarok.",
     type: "website",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ykidnwg — Pengembang Kreatif",
+    title: "ykidnwg — Creative Developer",
     description:
       "Frontend, AI, and useful digital tools — a portfolio by Muhamad Wildan Mubarok.",
   },
