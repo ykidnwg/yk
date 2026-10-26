@@ -118,31 +118,31 @@ function ProjectArtwork({ project }: { project: Project }) {
           </aside>
           <div className="mini-dash-main">
             <div className="mini-dash-top">
-              <span>Selamat pagi, Wildan</span>
+              <span>Good morning, Wildan</span>
               <span className="mini-avatar">W</span>
             </div>
-            <div className="mini-dash-heading">Ruangmu, lebih tertata.</div>
+            <div className="mini-dash-heading">Your space, more organized.</div>
             <div className="mini-metric-row">
               <div className="mini-metric">
-                <span>Ringkasan bulanan</span>
-                <strong>Tetap terarah</strong>
+                <span>Monthly overview</span>
+                <strong>Stay on track</strong>
                 <i className="metric-line" />
               </div>
               <div className="mini-metric peach-metric">
-                <span>Fokus hari ini</span>
-                <strong>Satu per satu</strong>
+                <span>Today’s focus</span>
+                <strong>One step at a time</strong>
                 <i className="metric-bubble" />
               </div>
             </div>
             <div className="mini-task">
               <span className="task-check"><Check size={10} /></span>
-              <span>Tinjau target mingguan</span>
-              <small>Hari ini</small>
+              <span>Review weekly goals</span>
+              <small>Today</small>
             </div>
             <div className="mini-task">
               <span className="task-check muted-check" />
-              <span>Rencanakan proyek berikutnya</span>
-              <small>Nanti</small>
+              <span>Plan the next project</span>
+              <small>Later</small>
             </div>
           </div>
         </div>
@@ -157,7 +157,7 @@ function ProjectArtwork({ project }: { project: Project }) {
         <div className="imah-copy">
           <span>NIKMATI AROMA.</span>
           <strong>IMAH<br />WANGI</strong>
-          <small>Temukan aroma yang terasa seperti dirimu.</small>
+          <small>Find a scent that feels like you.</small>
         </div>
         <div className="perfume-shadow" />
         <div className="perfume-bottle">
@@ -204,7 +204,7 @@ function ProjectArtwork({ project }: { project: Project }) {
       </div>
       <div className="studio-card studio-card-b">
         <span className="studio-thumb" />
-        <span><strong>Tinjau materi</strong><small>Menunggu persetujuan</small></span>
+        <span><strong>Review creative</strong><small>Menunggu persetujuan</small></span>
       </div>
       <div className="studio-card studio-card-c">
         <span className="studio-dot" />
@@ -249,7 +249,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
           <span className="project-status"><span />{project.status}</span>
           {project.href ? (
             <a href={project.href} target="_blank" rel="noreferrer" className="text-link">
-              Lihat proyek <ArrowUpRight size={14} />
+              View project <ArrowUpRight size={14} />
             </a>
           ) : (
             <span className="muted-note">Detail menyusul</span>
@@ -280,7 +280,7 @@ export default function Home() {
             <nav className="desktop-nav" aria-label="Main navigation">
               {navLinks.map((link) => <a href={link.href} key={link.href}>{link.label}</a>)}
             </nav>
-            <a className="nav-cta" href="#contact">Mari berbincang <ArrowUpRight size={15} /></a>
+            <a className="nav-cta" href="#contact">Let’s talk <ArrowUpRight size={15} /></a>
             <button className="menu-toggle" type="button" onClick={() => setMenuOpen((open) => !open)} aria-label={menuOpen ? "Close menu" : "Open menu"} aria-expanded={menuOpen}>
               {menuOpen ? <X size={22} /> : <Menu size={22} />}
             </button>
@@ -316,19 +316,19 @@ export default function Home() {
                 <span className="eyebrow-dot" /> PENGEMBANG KREATIF <span className="eyebrow-divider">/</span> SUKABUMI, ID
               </motion.div>
               <motion.h1 variants={{ hidden: { opacity: 0, y: 22 }, visible: { opacity: 1, y: 0, transition: { duration: 0.65 } } }}>
-                Berkarya dengan tujuan.<br />
+                Creating with intention.<br />
                 <span className="hero-title-accent">Dibuat agar terasa</span><br />
                 <span className="hero-title-italic">berbeda.</span>
               </motion.h1>
               <motion.p className="hero-description" variants={{ hidden: { opacity: 0, y: 16 }, visible: { opacity: 1, y: 0 } }}>
-                Saya membangun pengalaman digital yang memadukan pengembangan frontend, AI, dan alat praktis untuk keseharian. Antarmuka yang matang, ide yang berguna, dan rasa ingin tahu dalam setiap detail.
+                I build digital experiences that bring together frontend development, AI, and practical tools for everyday life. Thoughtful interfaces, useful ideas, and curiosity in every detail.
               </motion.p>
               <motion.div className="hero-actions" variants={{ hidden: { opacity: 0, y: 14 }, visible: { opacity: 1, y: 0 } }}>
-                <a className="button-primary" href="#work">Jelajahi proyek <ArrowDownRight size={17} /></a>
-                <a className="button-quiet" href="#about">Tentang saya <ArrowRight size={16} /></a>
+                <a className="button-primary" href="#work">Explore projects <ArrowDownRight size={17} /></a>
+                <a className="button-quiet" href="#about">About me <ArrowRight size={16} /></a>
               </motion.div>
               <motion.div className="hero-socials" variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}>
-                <span>TEMUKAN SAYA DI</span>
+                <span>FIND ME ON</span>
                 <a href="https://github.com/ykidnwg" target="_blank" rel="noreferrer" aria-label="GitHub"><Github size={17} /></a>
                 <a href="https://www.linkedin.com/in/ykidnwg/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><Linkedin size={17} /></a>
                 <a href="mailto:muhamadwldn22@gmail.com" aria-label="Email"><Mail size={17} /></a>
@@ -358,14 +358,14 @@ export default function Home() {
               <div className="hero-art-label"><span>YK / 26</span><span>MANDIRI DALAM BERKARYA</span></div>
             </motion.div>
           </div>
-          <a className="hero-scroll" href="#work"><span>GULIR UNTUK MENJELAJAH</span><span className="scroll-line"><i /></span></a>
+          <a className="hero-scroll" href="#work"><span>SCROLL TO EXPLORE</span><span className="scroll-line"><i /></span></a>
         </section>
 
         <div className="ticker" aria-label="Design with intention, build with care">
           <div className="ticker-track">
             {Array.from({ length: 2 }).map((_, i) => (
               <div className="ticker-group" key={i}>
-                <span>DESAIN DENGAN TUJUAN</span><Sparkles size={15} /><span>BANGUN DENGAN TELITI</span><span className="ticker-star">✳</span><span>TERUS PENUH RASA INGIN TAHU</span><Code2 size={15} /><span>BUAT AGAR BERMANFAAT</span><span className="ticker-star">✳</span>
+                <span>DESIGN WITH INTENTION</span><Sparkles size={15} /><span>BUILD WITH CARE</span><span className="ticker-star">✳</span><span>STAY CURIOUS</span><Code2 size={15} /><span>MAKE IT USEFUL</span><span className="ticker-star">✳</span>
               </div>
             ))}
           </div>
@@ -375,10 +375,10 @@ export default function Home() {
           <div className="section-container">
             <motion.div className="section-heading work-heading" initial={{ opacity: 0, y: 22 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
               <div>
-                <span className="section-kicker"><span>01</span> / PROYEK PILIHAN</span>
-                <h2>Beberapa hal yang<br />sedang saya <em>bangun.</em></h2>
+                <span className="section-kicker"><span>01</span> / SELECTED WORK</span>
+                <h2>A few things I’m<br />I’m currently <em>building.</em></h2>
               </div>
-              <p>Kumpulan proyek web, eksperimen yang masih berjalan, dan ide yang sedang saya wujudkan. Setiap proyek dimulai dari masalah yang layak diselesaikan.</p>
+              <p>Kumpulan proyek web, eksperimen yang masih berjalan, dan ide yang I’m currently wujudkan. Setiap proyek dimulai dari masalah yang layak diselesaikan.</p>
             </motion.div>
 
             <div className="project-toolbar">
@@ -389,7 +389,7 @@ export default function Home() {
                   </button>
                 ))}
               </div>
-              <span className="project-count">{String(visibleProjects.length).padStart(2, "0")} PROYEK</span>
+              <span className="project-count">{String(visibleProjects.length).padStart(2, "0")} PROJECTS</span>
             </div>
 
             <motion.div layout className="projects-grid">
@@ -399,8 +399,8 @@ export default function Home() {
             </motion.div>
 
             <div className="all-work-line">
-              <span>Eksperimen lainnya bisa kamu lihat di GitHub saya.</span>
-              <a href="https://github.com/ykidnwg" target="_blank" rel="noreferrer" className="text-link">Kunjungi GitHub <ArrowUpRight size={15} /></a>
+              <span>You can find more experiments on my GitHub.</span>
+              <a href="https://github.com/ykidnwg" target="_blank" rel="noreferrer" className="text-link">Visit GitHub <ArrowUpRight size={15} /></a>
             </div>
           </div>
         </section>
@@ -408,20 +408,20 @@ export default function Home() {
         <section className="about-section section-pad" id="about">
           <div className="section-container about-layout">
             <motion.div className="about-aside" initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-              <span className="section-kicker"><span>02</span> / SOSOK DI BALIK KODE</span>
-              <div className="about-photo-frame"><img src="/images/profile.jpeg" alt="Profile photo of Muhamad Wildan Mubarok" className="about-photo" /><span className="about-photo-caption">YK / PROFIL</span><i>selalu ingin tahu</i></div>
-              <div className="about-location"><span className="location-dot" /> BERBASIS DI SUKABUMI, INDONESIA</div>
+              <span className="section-kicker"><span>02</span> / THE PERSON BEHIND THE CODE</span>
+              <div className="about-photo-frame"><img src="/images/profile.jpeg" alt="Profile photo of Muhamad Wildan Mubarok" className="about-photo" /><span className="about-photo-caption">YK / PROFIL</span><i>always curious</i></div>
+              <div className="about-location"><span className="location-dot" /> BASED IN SUKABUMI, INDONESIA</div>
             </motion.div>
             <motion.div className="about-copy" initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-              <h2>Bukan hanya soal tampilan.<br /><span>cara ia <em>bekerja.</em></span></h2>
-              <p className="about-lead">Saya Muhamad Wildan Mubarok — pengembang yang senang mengubah ide mentah menjadi produk digital yang jelas dan bermanfaat.</p>
-              <p className="about-detail">Ketertarikan saya mencakup pengembangan frontend, alat berbantuan AI, dan sistem yang menghubungkan perangkat lunak dengan dunia nyata. Saya berusaha memahami masalahnya sebelum mulai menulis kode, lalu menyempurnakan detail agar semuanya terasa tepat.</p>
+              <h2>It’s not just how it looks.<br /><span>It’s how it <em>works.</em></span></h2>
+              <p className="about-lead">I’m Muhamad Wildan Mubarok, a developer who enjoys turning early ideas into clear, useful digital products.</p>
+              <p className="about-detail">I’m interested in frontend development, AI-powered tools, and systems that connect software with the real world. I aim to understand the problem before writing code, then refine the details until everything feels right.</p>
               <div className="about-principles">
-                <div><span>01</span><strong>Terus belajar</strong><small>Jelajahi, bertanya, terus belajar.</small></div>
-                <div><span>02</span><strong>Bangun dengan tujuan</strong><small>Pastikan setiap interaksi punya manfaat.</small></div>
-                <div><span>03</span><strong>Utamakan manfaat</strong><small>Teknologi yang baik membantu manusia.</small></div>
+                <div><span>01</span><strong>Keep learning</strong><small>Explore, ask questions, keep learning.</small></div>
+                <div><span>02</span><strong>Build with purpose</strong><small>Make every interaction meaningful.</small></div>
+                <div><span>03</span><strong>Prioritize usefulness</strong><small>Good technology helps people.</small></div>
               </div>
-              <a className="text-link about-github" href="https://github.com/ykidnwg" target="_blank" rel="noreferrer">Lihat lebih banyak di GitHub <ArrowUpRight size={15} /></a>
+              <a className="text-link about-github" href="https://github.com/ykidnwg" target="_blank" rel="noreferrer">More on GitHub <ArrowUpRight size={15} /></a>
             </motion.div>
           </div>
         </section>
@@ -429,12 +429,12 @@ export default function Home() {
         <section className="expertise-section section-pad">
           <div className="section-container expertise-layout">
             <motion.div className="expertise-intro" initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-              <span className="section-kicker"><span>03</span> / KEAHLIAN & RASA INGIN TAHU</span>
-              <h2>Perangkat yang<br />terus <em>berkembang.</em></h2>
-              <p>Kumpulan teknologi yang terus berkembang di setiap proyek. Saya senang mempelajari teknologi yang sesuai dengan masalah, bukan memaksakan setiap ide menggunakan perangkat yang sama.</p>
+              <span className="section-kicker"><span>03</span> / SKILLS & CURIOSITY</span>
+              <h2>A toolkit that<br />keeps <em>evolving.</em></h2>
+              <p>Kumpulan teknologi yang keeps berkembang di setiap proyek. Saya senang mempelajari teknologi yang sesuai dengan masalah, bukan memaksakan setiap ide menggunakan perangkat yang sama.</p>
             </motion.div>
             <motion.div className="skills-panel" initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.12 }}>
-              <div className="skills-panel-head"><span>DI MEJA KERJA SAYA</span><span className="live-mark"><i /> TERUS BELAJAR</span></div>
+              <div className="skills-panel-head"><span>ON MY WORKBENCH</span><span className="live-mark"><i /> ALWAYS LEARNING</span></div>
               <div className="skills-grid">
                 {skills.map((skill, index) => (
                   <div className="skill-item" key={skill}>
@@ -446,7 +446,7 @@ export default function Home() {
                   </div>
                 ))}
               </div>
-              <div className="skills-footnote"><Sparkles size={15} /><span>Teknologi dipilih sesuai kebutuhan — bukan sekadar tren.</span></div>
+              <div className="skills-footnote"><Sparkles size={15} /><span>Choose technology for the problem — not just the trend.</span></div>
             </motion.div>
           </div>
         </section>
@@ -455,28 +455,28 @@ export default function Home() {
           <div className="section-container">
             <motion.div className="section-heading process-heading" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
               <div>
-                <span className="section-kicker"><span>04</span> / CARA SAYA MENGEMBANGKAN PROYEK</span>
-                <h2>Langkah kecil.<br /><em>Hasil yang matang</em> </h2>
+                <span className="section-kicker"><span>04</span> / CARA SAYA MENGEMBANGKAN PROJECTS</span>
+                <h2>Small steps.<br /><em>Thoughtful results</em> </h2>
               </div>
-              <p>Proses yang sederhana membuat pekerjaan tetap terarah, memberi ruang untuk bereksperimen, dan membantu setiap keputusan memiliki tujuan.</p>
+              <p>A simple process keeps the work focused, leaves room to experiment, and gives every decision a purpose.</p>
             </motion.div>
             <div className="process-grid">
               <motion.article className="process-card" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.03 }}>
-                <div className="process-card-top"><span>01 / PAHAMI KEBUTUHAN</span><span className="process-symbol"><Sparkles size={20} /></span></div>
-                <h3>Mulai dari<br /><em>alasannya.</em></h3>
+                <div className="process-card-top"><span>01 / UNDERSTAND</span><span className="process-symbol"><Sparkles size={20} /></span></div>
+                <h3>Start with<br /><em>the why.</em></h3>
                 <p>Understand the user, the context, and what success should actually look like before jumping into implementation.</p>
                 <div className="process-line"><i /></div>
               </motion.article>
               <motion.article className="process-card process-card-accent" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.12 }}>
-                <div className="process-card-top"><span>02 / EKSPLORASI</span><span className="process-symbol"><Workflow size={20} /></span></div>
-                <h3>Beri ruang<br />untuk <em>ide.</em></h3>
+                <div className="process-card-top"><span>02 / EXPLORE</span><span className="process-symbol"><Workflow size={20} /></span></div>
+                <h3>Make room<br />for <em>ideas.</em></h3>
                 <p>Shape a clear direction, test the risky bits early, and keep the experience simple enough to use.</p>
                 <div className="process-line"><i /></div>
               </motion.article>
               <motion.article className="process-card process-card-dark" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.21 }}>
-                <div className="process-card-top"><span>03 / BANGUN</span><span className="process-symbol"><Code2 size={20} /></span></div>
-                <h3>Bangun.<br /><em>Sempurnakan.</em></h3>
-                <p>Kembangkan dalam langkah kecil yang bisa diuji, lalu poles detail agar produk terasa menyatu dan dapat diandalkan.</p>
+                <div className="process-card-top"><span>03 / BUILD</span><span className="process-symbol"><Code2 size={20} /></span></div>
+                <h3>Build.<br /><em>Refine.</em></h3>
+                <p>Build in small, testable steps, then refine the details until the product feels cohesive and reliable.</p>
                 <div className="process-line"><i /></div>
               </motion.article>
             </div>
@@ -487,13 +487,13 @@ export default function Home() {
           <div className="contact-shape contact-shape-a" aria-hidden="true" />
           <div className="contact-shape contact-shape-b" aria-hidden="true" />
           <div className="section-container contact-content">
-            <motion.span className="section-kicker contact-kicker" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}><span>05</span> / PUNYA IDE ATAU PROYEK?</motion.span>
-            <motion.h2 initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.65 }}>Mari wujudkan<br /><em>hal-hal baik</em> terjadi.</motion.h2>
-            <motion.p initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.08 }}>Punya proyek, ide, atau ingin berbincang soal teknologi? Silakan hubungi saya.</motion.p>
-            <motion.a className="contact-button" href="mailto:muhamadwldn22@gmail.com" initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.16 }}>Sapa saya <ArrowUpRight size={18} /></motion.a>
+            <motion.span className="section-kicker contact-kicker" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}><span>05</span> / PUNYA IDE ATAU PROJECTS?</motion.span>
+            <motion.h2 initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.65 }}>Let’s make<br /><em>good things</em> happen.</motion.h2>
+            <motion.p initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.08 }}>Have a project, an idea, or want to talk tech? I’d love to hear from you.</motion.p>
+            <motion.a className="contact-button" href="mailto:muhamadwldn22@gmail.com" initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.16 }}>Say hello <ArrowUpRight size={18} /></motion.a>
             <div className="contact-bottom">
               <a href="mailto:muhamadwldn22@gmail.com"><Mail size={15} /> muhamadwldn22@gmail.com</a>
-              <span>TERBUKA UNTUK DISKUSI</span>
+              <span>OPEN TO CONVERSATIONS</span>
             </div>
           </div>
         </section>
@@ -501,7 +501,7 @@ export default function Home() {
         <footer className="site-footer">
           <div className="section-container footer-inner">
             <a className="wordmark footer-wordmark" href="#home"><span className="wordmark-symbol">y</span><span>ykidnwg<span className="wordmark-period">.</span></span></a>
-            <span className="footer-note">Dibuat dengan rasa ingin tahu, kopi, dan ketelitian.</span>
+            <span className="footer-note">Made with curiosity, coffee, and attention to detail.</span>
             <div className="footer-links">
               <a href="https://github.com/ykidnwg" target="_blank" rel="noreferrer" aria-label="GitHub"><Github size={17} /></a>
               <a href="https://www.linkedin.com/in/ykidnwg/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><Linkedin size={17} /></a>
