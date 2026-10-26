@@ -169,7 +169,7 @@ function ProjectArtwork({ project }: { project: Project }) {
           </div>
         </div>
         <span className="imah-sun" />
-        <span className="art-caption">NIAGA DIGITAL / 002</span>
+        <span className="art-caption">DIGITAL COMMERCE / 002</span>
       </div>
     );
   }
@@ -186,8 +186,8 @@ function ProjectArtwork({ project }: { project: Project }) {
         <div className="signal-node node-three"><span /></div>
         <div className="signal-label label-one">ESP32</div>
         <div className="signal-label label-two">SX1278</div>
-        <div className="signal-label label-three">JARAK JAUH</div>
-        <span className="art-caption">PERANGKAT TERHUBUNG / 003</span>
+        <div className="signal-label label-three">LONG RANGE</div>
+        <span className="art-caption">CONNECTED DEVICES / 003</span>
       </div>
     );
   }
@@ -208,7 +208,7 @@ function ProjectArtwork({ project }: { project: Project }) {
       </div>
       <div className="studio-card studio-card-c">
         <span className="studio-dot" />
-        <span><strong>Jadwalkan</strong><small>Berikutnya · 18.30</small></span>
+        <span><strong>Schedule post</strong><small>Berikutnya · 18.30</small></span>
       </div>
       <span className="art-caption">ALUR KERJA BERBANTUAN AI / 004</span>
     </div>
@@ -313,7 +313,7 @@ export default function Home() {
               variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.12, delayChildren: 0.12 } } }}
             >
               <motion.div className="eyebrow hero-eyebrow" variants={{ hidden: { opacity: 0, y: 12 }, visible: { opacity: 1, y: 0 } }}>
-                <span className="eyebrow-dot" /> PENGEMBANG KREATIF <span className="eyebrow-divider">/</span> SUKABUMI, ID
+                <span className="eyebrow-dot" /> CREATIVE DEVELOPER <span className="eyebrow-divider">/</span> SUKABUMI, ID
               </motion.div>
               <motion.h1 variants={{ hidden: { opacity: 0, y: 22 }, visible: { opacity: 1, y: 0, transition: { duration: 0.65 } } }}>
                 Creating with intention.<br />
@@ -353,9 +353,9 @@ export default function Home() {
               </motion.div>
               <motion.div className="floating-note note-bottom" animate={{ y: [0, 8, 0], rotate: [2, 0, 2] }} transition={{ duration: 6.2, repeat: Infinity, ease: "easeInOut" }}>
                 <span className="note-spark"><Sparkles size={17} /></span>
-                <span><strong>Bangun & jelajahi</strong><small>Satu ide setiap saat</small></span>
+                <span><strong>Build & explore</strong><small>One idea at a time</small></span>
               </motion.div>
-              <div className="hero-art-label"><span>YK / 26</span><span>MANDIRI DALAM BERKARYA</span></div>
+              <div className="hero-art-label"><span>YK / 26</span><span>INDEPENDENT BY DESIGN</span></div>
             </motion.div>
           </div>
           <a className="hero-scroll" href="#work"><span>SCROLL TO EXPLORE</span><span className="scroll-line"><i /></span></a>
@@ -378,7 +378,7 @@ export default function Home() {
                 <span className="section-kicker"><span>01</span> / SELECTED WORK</span>
                 <h2>A few things I’m<br />I’m currently <em>building.</em></h2>
               </div>
-              <p>Kumpulan proyek web, eksperimen yang masih berjalan, dan ide yang I’m currently wujudkan. Setiap proyek dimulai dari masalah yang layak diselesaikan.</p>
+              <p>A collection of web projects, ongoing experiments, and ideas taking shape. Every project starts with a problem worth solving.</p>
             </motion.div>
 
             <div className="project-toolbar">
@@ -409,7 +409,7 @@ export default function Home() {
           <div className="section-container about-layout">
             <motion.div className="about-aside" initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
               <span className="section-kicker"><span>02</span> / THE PERSON BEHIND THE CODE</span>
-              <div className="about-photo-frame"><img src="/images/profile.jpeg" alt="Profile photo of Muhamad Wildan Mubarok" className="about-photo" /><span className="about-photo-caption">YK / PROFIL</span><i>always curious</i></div>
+              <div className="about-photo-frame"><img src="/images/profile.jpeg" alt="Profile photo of Muhamad Wildan Mubarok" className="about-photo" /><span className="about-photo-caption">YK / PROFILE</span><i>always curious</i></div>
               <div className="about-location"><span className="location-dot" /> BASED IN SUKABUMI, INDONESIA</div>
             </motion.div>
             <motion.div className="about-copy" initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
@@ -431,7 +431,7 @@ export default function Home() {
             <motion.div className="expertise-intro" initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
               <span className="section-kicker"><span>03</span> / SKILLS & CURIOSITY</span>
               <h2>A toolkit that<br />keeps <em>evolving.</em></h2>
-              <p>Kumpulan teknologi yang keeps berkembang di setiap proyek. Saya senang mempelajari teknologi yang sesuai dengan masalah, bukan memaksakan setiap ide menggunakan perangkat yang sama.</p>
+              <p>My toolkit evolves with every project. I enjoy learning the right technology for each problem rather than forcing every idea into the same stack.</p>
             </motion.div>
             <motion.div className="skills-panel" initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.12 }}>
               <div className="skills-panel-head"><span>ON MY WORKBENCH</span><span className="live-mark"><i /> ALWAYS LEARNING</span></div>
@@ -455,7 +455,7 @@ export default function Home() {
           <div className="section-container">
             <motion.div className="section-heading process-heading" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
               <div>
-                <span className="section-kicker"><span>04</span> / CARA SAYA MENGEMBANGKAN PROJECTS</span>
+                <span className="section-kicker"><span>04</span> / HOW I BUILD</span>
                 <h2>Small steps.<br /><em>Thoughtful results</em> </h2>
               </div>
               <p>A simple process keeps the work focused, leaves room to experiment, and gives every decision a purpose.</p>
@@ -487,7 +487,7 @@ export default function Home() {
           <div className="contact-shape contact-shape-a" aria-hidden="true" />
           <div className="contact-shape contact-shape-b" aria-hidden="true" />
           <div className="section-container contact-content">
-            <motion.span className="section-kicker contact-kicker" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}><span>05</span> / PUNYA IDE ATAU PROJECTS?</motion.span>
+            <motion.span className="section-kicker contact-kicker" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}><span>05</span> / HAVE AN IDEA OR PROJECT?</motion.span>
             <motion.h2 initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.65 }}>Let’s make<br /><em>good things</em> happen.</motion.h2>
             <motion.p initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.08 }}>Have a project, an idea, or want to talk tech? I’d love to hear from you.</motion.p>
             <motion.a className="contact-button" href="mailto:muhamadwldn22@gmail.com" initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.16 }}>Say hello <ArrowUpRight size={18} /></motion.a>
