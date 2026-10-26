@@ -22,14 +22,14 @@ import {
   X,
 } from "lucide-react";
 
-type Category = "Semua" | "Web" | "AI & Otomasi" | "IoT";
+type Category = "All" | "Web" | "AI & Automation" | "IoT";
 
 type Project = {
   number: string;
   title: string;
   eyebrow: string;
   description: string;
-  category: Exclude<Category, "Semua">;
+  category: Exclude<Category, "All">;
   tags: string[];
   status: string;
   visual: "ykflow" | "imah" | "doorbell" | "studio";
@@ -40,57 +40,57 @@ const projects: Project[] = [
   {
     number: "01",
     title: "YKFlow",
-    eyebrow: "PRODUKTIVITAS PERSONAL",
+    eyebrow: "PERSONAL PRODUCTIVITY",
     description:
-      "Konsep ruang kerja personal untuk catatan, jadwal, dan pencatatan keuangan harian agar berbagai kebutuhan tetap tertata di satu tempat.",
+      "A personal workspace concept for notes, schedules, and daily finance tracking that keeps everyday tasks organized in one place.",
     category: "Web",
     tags: ["React Native", "Expo", "TypeScript"],
-    status: "Dalam pengembangan",
+    status: "In development",
     visual: "ykflow",
   },
   {
     number: "02",
     title: "Imah Wangi",
-    eyebrow: "PENGALAMAN TOKO DIGITAL",
+    eyebrow: "DIGITAL SHOPPING EXPERIENCE",
     description:
-      "Katalog parfum dengan pilihan beberapa produk, pemesanan melalui WhatsApp, dan fitur eksplorasi racikan aroma.",
+      "A fragrance catalog featuring product selections, WhatsApp ordering, and an experience for exploring scent combinations.",
     category: "Web",
-    tags: ["Next.js", "Pengalaman pengguna", "WhatsApp"],
-    status: "Proyek",
+    tags: ["Next.js", "User experience", "WhatsApp"],
+    status: "Project",
     visual: "imah",
     href: "https://github.com/ykidnwg/imah-wangi",
   },
   {
     number: "03",
     title: "LoRa Smart Doorbell",
-    eyebrow: "PERANGKAT KERAS TERHUBUNG",
+    eyebrow: "CONNECTED HARDWARE",
     description:
-      "Eksperimen bel pintu nirkabel yang menghubungkan ESP32, modul LoRa SX1278, tombol fisik, dan buzzer jarak jauh.",
+      "A wireless doorbell experiment connecting an ESP32, LoRa SX1278 module, physical button, and remote buzzer.",
     category: "IoT",
-    tags: ["ESP32", "LoRa SX1278", "Sistem tertanam"],
-    status: "Eksperimen perangkat keras",
+    tags: ["ESP32", "LoRa SX1278", "Embedded systems"],
+    status: "Hardware experiment",
     visual: "doorbell",
   },
   {
     number: "04",
     title: "AI Social Studio",
-    eyebrow: "KONSEP ALUR KERJA KONTEN",
+    eyebrow: "AI CONTENT WORKFLOW CONCEPT",
     description:
-      "Konsep otomasi untuk mengatur konten berbantuan AI, meninjau materi kreatif, dan merencanakan unggahan berbagai akun media sosial.",
-    category: "AI & Otomasi",
-    tags: ["Alur AI", "Alat konten", "Otomasi"],
-    status: "Konsep dalam pengembangan",
+      "An automation concept for organizing AI-assisted content, reviewing creative assets, and planning posts across social media accounts.",
+    category: "AI & Automation",
+    tags: ["AI workflows", "Content tools", "Otomasi"],
+    status: "Concept in development",
     visual: "studio",
   },
 ];
 
-const filters: Category[] = ["Semua", "Web", "AI & Otomasi", "IoT"];
+const filters: Category[] = ["All", "Web", "AI & Automation", "IoT"];
 
 const navLinks = [
-  { label: "Proyek", href: "#work" },
-  { label: "Tentang", href: "#about" },
-  { label: "Proses", href: "#process" },
-  { label: "Kontak", href: "#contact" },
+  { label: "Project", href: "#work" },
+  { label: "About", href: "#about" },
+  { label: "Process", href: "#process" },
+  { label: "Contact", href: "#contact" },
 ];
 
 const skills = [
@@ -107,7 +107,7 @@ const skills = [
 function ProjectArtwork({ project }: { project: Project }) {
   if (project.visual === "ykflow") {
     return (
-      <div className="project-art art-ykflow" aria-label="Ilustrasi antarmuka YKFlow">
+      <div className="project-art art-ykflow" aria-label="YKFlow interface illustration">
         <div className="mini-dashboard">
           <aside className="mini-sidebar">
             <span className="mini-logo">yk.</span>
@@ -153,7 +153,7 @@ function ProjectArtwork({ project }: { project: Project }) {
 
   if (project.visual === "imah") {
     return (
-      <div className="project-art art-imah" aria-label="Ilustrasi botol parfum">
+      <div className="project-art art-imah" aria-label="Perfume bottle illustration">
         <div className="imah-copy">
           <span>NIKMATI AROMA.</span>
           <strong>IMAH<br />WANGI</strong>
@@ -176,7 +176,7 @@ function ProjectArtwork({ project }: { project: Project }) {
 
   if (project.visual === "doorbell") {
     return (
-      <div className="project-art art-doorbell" aria-label="Ilustrasi sistem bel pintu nirkabel">
+      <div className="project-art art-doorbell" aria-label="Wireless doorbell system illustration">
         <div className="circuit-grid" />
         <div className="circuit-ring ring-outer" />
         <div className="circuit-ring ring-inner" />
@@ -193,7 +193,7 @@ function ProjectArtwork({ project }: { project: Project }) {
   }
 
   return (
-    <div className="project-art art-studio" aria-label="Ilustrasi alur kerja konten berbantuan AI">
+    <div className="project-art art-studio" aria-label="AI-assisted content workflow illustration">
       <div className="studio-orbit orbit-one" />
       <div className="studio-orbit orbit-two" />
       <div className="studio-center"><Sparkles size={32} strokeWidth={1.3} /></div>
@@ -234,7 +234,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
         <div className="project-title-row">
           <h3>{project.title}</h3>
           {project.href ? (
-            <a href={project.href} target="_blank" rel="noreferrer" className="project-open" aria-label={"Open " + project.title + " repositori sumber"}>
+            <a href={project.href} target="_blank" rel="noreferrer" className="project-open" aria-label={"Open " + project.title + " source repository"}>
               <ArrowUpRight size={19} />
             </a>
           ) : (
@@ -261,9 +261,9 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
 }
 
 export default function Home() {
-  const [activeFilter, setActiveFilter] = useState<Category>("Semua");
+  const [activeFilter, setActiveFilter] = useState<Category>("All");
   const [menuOpen, setMenuOpen] = useState(false);
-  const visibleProjects = projects.filter((project) => activeFilter === "Semua" || project.category === activeFilter);
+  const visibleProjects = projects.filter((project) => activeFilter === "All" || project.category === activeFilter);
 
   const closeMenu = () => setMenuOpen(false);
 
@@ -273,15 +273,15 @@ export default function Home() {
         <div className="top-progress" aria-hidden="true" />
         <header className="site-header">
           <div className="nav-inner">
-            <a className="wordmark" href="#home" onClick={closeMenu} aria-label="Beranda ykidnwg">
+            <a className="wordmark" href="#home" onClick={closeMenu} aria-label="ykidnwg home">
               <span className="wordmark-symbol">y</span>
               <span>ykidnwg<span className="wordmark-period">.</span></span>
             </a>
-            <nav className="desktop-nav" aria-label="Navigasi utama">
+            <nav className="desktop-nav" aria-label="Main navigation">
               {navLinks.map((link) => <a href={link.href} key={link.href}>{link.label}</a>)}
             </nav>
             <a className="nav-cta" href="#contact">Mari berbincang <ArrowUpRight size={15} /></a>
-            <button className="menu-toggle" type="button" onClick={() => setMenuOpen((open) => !open)} aria-label={menuOpen ? "Tutup menu" : "Buka menu"} aria-expanded={menuOpen}>
+            <button className="menu-toggle" type="button" onClick={() => setMenuOpen((open) => !open)} aria-label={menuOpen ? "Close menu" : "Open menu"} aria-expanded={menuOpen}>
               {menuOpen ? <X size={22} /> : <Menu size={22} />}
             </button>
           </div>
@@ -293,7 +293,7 @@ export default function Home() {
                 animate={{ opacity: 1, height: "auto" }}
                 exit={{ opacity: 0, height: 0 }}
                 transition={{ duration: 0.22 }}
-                aria-label="Navigasi seluler"
+                aria-label="Mobile navigation"
               >
                 {navLinks.map((link) => (
                   <a href={link.href} key={link.href} onClick={closeMenu}>{link.label}<ArrowUpRight size={17} /></a>
@@ -382,7 +382,7 @@ export default function Home() {
             </motion.div>
 
             <div className="project-toolbar">
-              <div className="project-filters" role="group" aria-label="Filter proyek">
+              <div className="project-filters" role="group" aria-label="Filter projects">
                 {filters.map((filter) => (
                   <button type="button" key={filter} className={activeFilter === filter ? "filter-pill active" : "filter-pill"} onClick={() => setActiveFilter(filter)} aria-pressed={activeFilter === filter}>
                     {filter}
@@ -409,7 +409,7 @@ export default function Home() {
           <div className="section-container about-layout">
             <motion.div className="about-aside" initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
               <span className="section-kicker"><span>02</span> / SOSOK DI BALIK KODE</span>
-              <div className="about-photo-frame"><img src="/images/profile.jpeg" alt="Foto profil Muhamad Wildan Mubarok" className="about-photo" /><span className="about-photo-caption">YK / PROFIL</span><i>selalu ingin tahu</i></div>
+              <div className="about-photo-frame"><img src="/images/profile.jpeg" alt="Profile photo of Muhamad Wildan Mubarok" className="about-photo" /><span className="about-photo-caption">YK / PROFIL</span><i>selalu ingin tahu</i></div>
               <div className="about-location"><span className="location-dot" /> BERBASIS DI SUKABUMI, INDONESIA</div>
             </motion.div>
             <motion.div className="about-copy" initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
