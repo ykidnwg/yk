@@ -423,3 +423,12 @@ img, svg { display: block; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
 }
+
+
+/* Gaya foto profil pada bagian Tentang */
+.about-photo-frame { position: relative; width: 100%; max-width: 300px; aspect-ratio: 0.94; margin-top: 33px; overflow: hidden; isolation: isolate; background: var(--indigo); border-radius: 45% 45% 7px 7px; box-shadow: 0 22px 45px rgba(25,14,152,.13); }
+.about-photo-frame::after { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(180deg,transparent 58%,rgba(25,14,152,.65)); }
+.about-photo { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 35%; transition: transform 650ms var(--ease); }
+.about-photo-frame:hover .about-photo { transform: scale(1.035); }
+.about-photo-caption { position: absolute; z-index: 2; top: 17px; left: 17px; padding: 7px 9px; border: 1px solid rgba(255,255,255,.4); border-radius: 4px; background: rgba(25,14,152,.18); color: white; font-size: 8px; font-weight: 800; letter-spacing: .12em; }
+.about-photo-frame > i { position: absolute; z-index: 2; left: 22px; bottom: 20px; color: #fff; font-family: Georgia,serif; font-size: 14px; }
