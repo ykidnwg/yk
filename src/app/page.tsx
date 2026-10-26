@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { AnimatePresence, MotionConfig, motion } from "framer-motion";
 import {
-  ArrowDown,
   ArrowDownRight,
   ArrowRight,
   ArrowUpRight,
@@ -11,7 +10,6 @@ import {
   Check,
   Code2,
   Cpu,
-  ExternalLink,
   Github,
   Layers3,
   Linkedin,
@@ -49,7 +47,6 @@ const projects: Project[] = [
     tags: ["React Native", "Expo", "TypeScript"],
     status: "In development",
     visual: "ykflow",
-    href: "https://github.com/idnwg/yknote",
   },
   {
     number: "02",
