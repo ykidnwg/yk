@@ -16,16 +16,16 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "ykidnwg — Pengembang Kreatif",
+  title: "ykidnwg — Creative Developer",
   description:
-    "Portofolio Muhamad Wildan Mubarok — pengembangan frontend, alat berbantuan AI, dan pengalaman digital yang dirancang dengan cermat.",
+    "Portfolio of Muhamad Wildan Mubarok — frontend development, AI-powered tools, and thoughtfully crafted digital experiences.",
   keywords: [
     "ykidnwg",
     "Muhamad Wildan Mubarok",
-    "Pengembang Kreatif",
-    "Pengembang Frontend",
+    "Creative Developer",
+    "Frontend Developer",
     "AI",
-    "Portofolio",
+    "Portfolio",
     "Sukabumi",
   ],
   authors: [{ name: "Muhamad Wildan Mubarok" }],
@@ -40,10 +40,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ykidnwg — Pengembang Kreatif",
     description:
-      "Frontend, AI, dan alat digital yang bermanfaat — portofolio Muhamad Wildan Mubarok.",
+      "Frontend, AI, and useful digital tools — a portfolio by Muhamad Wildan Mubarok.",
     type: "website",
-    locale: "id_ID",
-    siteName: "ykidnwg Portofolio",
+    locale: "en_US",
+    siteName: "ykidnwg Portfolio",
     url: "https://ykidnwg.me",
   },
   twitter: {
@@ -60,7 +60,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="id" className={inter.variable}>
+    <html lang="en" className={inter.variable}>
       <body className={inter.className}>{children}</body>
     </html>
   );
