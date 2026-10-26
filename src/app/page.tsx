@@ -340,7 +340,7 @@ export default function Home() {
               initial={{ opacity: 0, scale: 0.94, rotate: 2 }}
               animate={{ opacity: 1, scale: 1, rotate: 0 }}
               transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1], delay: 0.22 }}
-              aria-label="Ilustrasi abstrak pengembang kreatif"
+              aria-label="Abstract creative developer illustration"
             >
               <div className="hero-art-wash" />
               <div className="hero-orbit hero-orbit-a" />
