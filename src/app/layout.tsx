@@ -16,16 +16,16 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "ykidnwg — Creative Developer",
+  title: "ykidnwg — Pengembang Kreatif",
   description:
-    "Portfolio of Muhamad Wildan Mubarok — exploring frontend development, AI-assisted tools, and thoughtful digital experiences.",
+    "Portofolio Muhamad Wildan Mubarok — pengembangan frontend, alat berbantuan AI, dan pengalaman digital yang dirancang dengan cermat.",
   keywords: [
     "ykidnwg",
     "Muhamad Wildan Mubarok",
-    "Creative Developer",
-    "Frontend Developer",
+    "Pengembang Kreatif",
+    "Pengembang Frontend",
     "AI",
-    "Portfolio",
+    "Portofolio",
     "Sukabumi",
   ],
   authors: [{ name: "Muhamad Wildan Mubarok" }],
@@ -38,17 +38,17 @@ export const metadata: Metadata = {
     shortcut: "/favicon.svg",
   },
   openGraph: {
-    title: "ykidnwg — Creative Developer",
+    title: "ykidnwg — Pengembang Kreatif",
     description:
-      "Frontend, AI, and useful digital tools — a portfolio by Muhamad Wildan Mubarok.",
+      "Frontend, AI, dan alat digital yang bermanfaat — portofolio Muhamad Wildan Mubarok.",
     type: "website",
-    locale: "en_US",
-    siteName: "ykidnwg Portfolio",
+    locale: "id_ID",
+    siteName: "ykidnwg Portofolio",
     url: "https://ykidnwg.me",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ykidnwg — Creative Developer",
+    title: "ykidnwg — Pengembang Kreatif",
     description:
       "Frontend, AI, and useful digital tools — a portfolio by Muhamad Wildan Mubarok.",
   },
@@ -60,7 +60,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="id" className={inter.variable}>
       <body className={inter.className}>{children}</body>
     </html>
   );
