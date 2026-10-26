@@ -317,7 +317,7 @@ export default function Home() {
               </motion.div>
               <motion.h1 variants={{ hidden: { opacity: 0, y: 22 }, visible: { opacity: 1, y: 0, transition: { duration: 0.65 } } }}>
                 Creating with intention.<br />
-                <span className="hero-title-accent">Dibuat agar terasa</span><br />
+                <span className="hero-title-accent">Built to feel</span><br />
                 <span className="hero-title-italic">berbeda.</span>
               </motion.h1>
               <motion.p className="hero-description" variants={{ hidden: { opacity: 0, y: 16 }, visible: { opacity: 1, y: 0 } }}>
