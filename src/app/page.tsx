@@ -84,7 +84,7 @@ const projects: Project[] = [
   },
 ];
 
-const filters: Category[] = ["All", "Web", "AI & Otomasi", "IoT"];
+const filters: Category[] = ["Semua", "Web", "AI & Otomasi", "IoT"];
 
 const navLinks = [
   { label: "Proyek", href: "#work" },
